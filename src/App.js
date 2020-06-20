@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from "react";
+import { AddCategory } from "./components/AddCategory";
 function App() {
+  const [categories, setCategories] = useState([]);
+
+  const addCategory = (category) => {
+    setCategories([...categories, category]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>Gifs App</h2>
+      <AddCategory addCategory={addCategory} />
+      <hr />
+      <ol>
+        {categories.map((category, i) => (
+          <li key={i}>{category}</li>
+        ))}
+      </ol>
     </div>
   );
 }
