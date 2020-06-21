@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AddCategory /> Validar componente 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <input
+    onChange={[Function]}
+    placeholder="Buscar gifs..."
+    type="text"
+    value=""
+  />
+</form>
+`;

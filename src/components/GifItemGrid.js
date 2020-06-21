@@ -1,6 +1,7 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-export const GrifItemGrid = ({ img, title }) => (
+export const GifItemGrid = ({ img, title }) => (
   <div className="GifItemCard">
     <img className="GifItemCard__img" src={img} alt={title} />
     <div className="GifItemCard__body">
@@ -8,3 +9,8 @@ export const GrifItemGrid = ({ img, title }) => (
     </div>
   </div>
 );
+
+GifItemGrid.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};

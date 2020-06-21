@@ -1,5 +1,5 @@
 import React from "react";
-import { GrifItemGrid } from "./GifItemGrid";
+import { GifItemGrid } from "./GifItemGrid";
 import useFetchGifs from "../hooks/useFetchGifs";
 
 export const GifGrid = ({ category }) => {
@@ -10,7 +10,7 @@ export const GifGrid = ({ category }) => {
       {loading && <h4>Loading...</h4>}
       <div className="GifGrid">
         {gifs.map((gif) => (
-          <GrifItemGrid key={gif.id} {...gif} />
+          <GifItemGrid key={gif.id} {...gif} />
         ))}
       </div>
     </>
