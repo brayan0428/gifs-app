@@ -21,7 +21,12 @@ export const AddCategory = ({ addCategory }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" value={inputValue} onChange={handleInputValue} />
+      <input
+        type="text"
+        placeholder="Buscar gifs..."
+        value={inputValue}
+        onChange={handleInputValue}
+      />
     </form>
   );
 };
