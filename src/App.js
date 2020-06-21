@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GifGrid } from "./components/GifGrid";
+
 function App() {
   const [categories, setCategories] = useState([]);
 
   const addCategory = (category) => {
-    setCategories([...categories, category]);
+    setCategories([category, ...categories]);
   };
 
   return (
@@ -12,11 +14,9 @@ function App() {
       <h2>Gifs App</h2>
       <AddCategory addCategory={addCategory} />
       <hr />
-      <ol>
-        {categories.map((category, i) => (
-          <li key={i}>{category}</li>
-        ))}
-      </ol>
+      {categories.map((category) => (
+        <GifGrid key={category.id} category={category.name} />
+      ))}
     </div>
   );
 }

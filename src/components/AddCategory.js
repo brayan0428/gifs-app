@@ -12,7 +12,10 @@ export const AddCategory = ({ addCategory }) => {
     if (inputValue.trim().length === 0) {
       return;
     }
-    addCategory(inputValue);
+    addCategory({
+      id: new Date().getMilliseconds(),
+      name: inputValue,
+    });
     setInputValue("");
   };
 

@@ -12,3 +12,25 @@ input {
   font-size: 14px;
   border-radius: 5px;
 }
+
+.GifGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  min-height: 100vh;
+  gap: 10px;
+}
+
+.GifItemCard {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.GifItemCard__img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 200px;
+  height: 200px;
+}
+
+.GifItemCard__body {
+  padding: 2px 16px;
+}
