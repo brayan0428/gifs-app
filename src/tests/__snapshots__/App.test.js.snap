@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> Validando el componente 1`] = `
+<div
+  className="App"
+>
+  <h2>
+    Gifs App
+  </h2>
+  <AddCategory
+    addCategory={[Function]}
+  />
+  <hr />
+</div>
+`;
