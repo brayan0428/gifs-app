@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GifGrid /> Validando el componente 1`] = `
+<Fragment>
+  <h2>
+    Goku
+  </h2>
+  <h4>
+    Loading...
+  </h4>
+  <div
+    className="GifGrid"
+  />
+</Fragment>
+`;
